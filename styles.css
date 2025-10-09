@@ -65,11 +65,20 @@ body{
 }
 
 .article {
-    padding: 20px;
+    padding: 30px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: rgb(226, 227, 235);
 
+}
+
+[class*="title"]{
+    font-weight: 700;
+}
+
+.main-title{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
 }
 
 .info{
@@ -102,12 +111,20 @@ button{
 
 .card{
     display: flex;
-    border: 2px solid red;
+    border-radius: 10px;
+    border-left: 10px solid rgb(196, 196, 0);
+    background-color: white;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
 }
 
-.card-icons{
+.card-top .info{
+    font-size: 0.9rem;
+    color: rgb(76, 76, 76);
+}
+
+.card-bottom{
     display: flex;
     justify-content: flex-end;
 }
@@ -115,6 +132,7 @@ button{
 .icon{
     width: 20px;
     height: 20px;
+    padding: 10px;
 }
 
 .profile{
