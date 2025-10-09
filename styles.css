@@ -69,11 +69,15 @@ body{
 }
 
 .article {
-    /* padding: 30px; */
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: rgb(226, 227, 235);
 
+}
+
+.projects{
+    grid-row: 1 / 3;
 }
 
 [class*="title"]{
@@ -121,6 +125,18 @@ button{
 
 .info-segment>.info{
     font-size: 0.7rem;
+}
+
+.trending>.card>.info-segment{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.3rem 0;
+}
+
+
+.info-text{
+    font-size: 0.8rem;
+    padding-left: 1rem;
 }
 
 .info{
