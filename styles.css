@@ -40,63 +40,31 @@ body{
 
 .header{
     display: grid;
-    padding: 1rem;
-    justify-content: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     z-index: 1;
     box-shadow: 1px -2px 5px;
     font-weight: 700;
-}
-
-.header-top,
-.header-bottom{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.header-top{
-    grid-template-columns: 2fr 1fr;
-    margin: auto;
-}
-
-.topleft{
-    display: grid;
-    grid-template-columns: 1fr 20fr;
-}
-
-.header-bottom {
-    grid-template-columns: 2fr 1fr;
-}
-
-.topright{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    margin: auto;
-    align-items: center;
-}
-
-.bottomleft{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
-.bottomright{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+.header>.icon,
+.header>.profile:last-of-type{
+    justify-self: end;
 }
 
-.bottomleft>img{
-    justify-self: flex-end;
-    width: 4.5rem;
-    height: 4.5rem;
+.header>img:nth-of-type(3){
+    justify-self: center;
 }
 
-.bottomleft>div>.text2 {
+.header>.profile:last-of-type{
+    width: 4rem;
+    height: 4rem;
+}
+
+.header>div>div:last-of-type{
     font-size: 1.5rem;
 }
 
@@ -113,28 +81,6 @@ body{
 
 .projects{
     grid-row: 1 / 3;
-}
-
-[class*="title"]{
-    font-weight: 700;
-}
-
-input{
-    border-radius: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 80%;
-    height: 2rem;
-    background-color: lightgray;
-    border-style: none;
-}
-
-button{
-    border-radius: 2rem;
-    height: 2.5rem;
-    width: 80%;
-    background-color: dodgerblue;
-    color: white;
-    border-style: none;
 }
 
 .cards-container{
@@ -213,4 +159,26 @@ button{
 .main-title {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+}
+
+[class*="title"] {
+    font-weight: 700;
+}
+
+input {
+    border-radius: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    height: 2rem;
+    background-color: lightgray;
+    border-style: none;
+}
+
+button {
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 80%;
+    background-color: dodgerblue;
+    color: white;
+    border-style: none;
 }
