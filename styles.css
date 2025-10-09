@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     font-weight: bold;
-    height: 35px;
+    height: 2rem;
 }
 
 .side-segment:first-child{
@@ -40,29 +40,44 @@ body{
 
 .header{
     display: grid;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 1px -2px 5px;
+}
+
+.header-top,
+.header-bottom{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .header-top{
-    display: grid;
-    grid-template-columns: 1fr 10fr 3fr 1fr 2fr;
-    align-items: center;
+    grid-template-columns: 2fr 1fr;
     margin: auto;
-    gap: 20px;
+}
+
+.topleft {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+
+}
+
+.topright{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: auto;
+    align-items: center;
 }
 
 .header-bottom{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.header-bottom:first-child{
 
-}
-
-.header-bottom:nth-child(3) {
-    grid-column: 2/3;
-}
 
 .article>*{
     padding: 1.5rem;
@@ -73,7 +88,6 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgb(226, 227, 235);
-
 }
 
 .projects{
@@ -85,17 +99,17 @@ body{
 }
 
 input{
-    border-radius: 30px;
+    border-radius: 2rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 2rem;
     background-color: lightgray;
     border-style: none;
 }
 
 button{
-    border-radius: 30px;
-    height: 40px;
+    border-radius: 2rem;
+    height: 2.5rem;
     background-color: dodgerblue;
     color: white;
     border-style: none;
@@ -150,6 +164,7 @@ button{
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem;
+    box-shadow: 0px 0px 2px;
 }
 
 .card-top .info{
